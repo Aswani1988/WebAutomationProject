@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-20T07:35:30 GMT" name="Suite" finished-at="2023-12-20T07:35:41 GMT" duration-ms="10541">
+    <groups>
+      <group name="ErrorValidation">
+        <method signature="ErrorvalidationTest.confirmationMessageValidation()[pri:0, instance:SwagLabs.Tests.ErrorvalidationTest@611889f4]" name="confirmationMessageValidation" class="SwagLabs.Tests.ErrorvalidationTest"/>
+        <method signature="ErrorvalidationTest.loginErrorvalidation()[pri:0, instance:SwagLabs.Tests.ErrorvalidationTest@611889f4]" name="loginErrorvalidation" class="SwagLabs.Tests.ErrorvalidationTest"/>
+      </group> <!-- ErrorValidation -->
+    </groups>
+    <test started-at="2023-12-20T07:35:30 GMT" name="ErrorValidation" finished-at="2023-12-20T07:35:41 GMT" duration-ms="10541">
+      <class name="SwagLabs.Tests.ErrorvalidationTest">
+        <test-method signature="cartPageErrorValidation()[pri:0, instance:SwagLabs.Tests.ErrorvalidationTest@611889f4]" started-at="2023-12-20T07:35:30 GMT" name="cartPageErrorValidation" finished-at="2023-12-20T07:35:35 GMT" duration-ms="4567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageErrorValidation -->
+        <test-method signature="confirmationMessageValidation()[pri:0, instance:SwagLabs.Tests.ErrorvalidationTest@611889f4]" started-at="2023-12-20T07:35:35 GMT" name="confirmationMessageValidation" finished-at="2023-12-20T07:35:38 GMT" duration-ms="3441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationMessageValidation -->
+        <test-method signature="loginErrorvalidation()[pri:0, instance:SwagLabs.Tests.ErrorvalidationTest@611889f4]" started-at="2023-12-20T07:35:38 GMT" name="loginErrorvalidation" finished-at="2023-12-20T07:35:40 GMT" duration-ms="2224" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Epic sadface: Username and password do not_ match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Epic sadface: Username and password do not_ match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at SwagLabs.Tests.ErrorvalidationTest.loginErrorvalidation(ErrorvalidationTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorvalidation -->
+      </class> <!-- SwagLabs.Tests.ErrorvalidationTest -->
+    </test> <!-- ErrorValidation -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -21,6 +21,7 @@ As this project uses Maven, we can invoke the tests using Maven goals.
 To run the test, use your CI or point Maven to the project and use the goals.
 
 mvn test -PprofileName -Dbrowser=browsername
+
 Eg: mvn test -PRegression -Dbrowser=firefox
 
 ## Project explanation:
